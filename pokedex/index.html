@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="icon" type="image/x-icon"
+        href="https://camo.githubusercontent.com/100dec8b6d9ca4f2137901acc2d57aea257755a17d7d20ecb6ad070be65e9fe5/68747470733a2f2f63646e2e666176776172652e746563682f696d672f646578612e706e67">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+
+    <header class="navbar" style="z-index: 1000000;">
+
+        <div class="nav">
+            <img class="imagemLogoPoke" src="https://crisgon.github.io/pokedex/src/images/logo.png"
+                alt="Logo Pokédex" style="width: 50%;">
+            <div class="head" style="border: none;">
+                <div class="search-container" style="border: none;">
+                    <div class="SearchPoke" style="display: contents;">
+                        <input class="searchInput" type="text" id="searchInput"
+                            placeholder="Search Pokémon by Name" style="outline: none !important;" autocomplete="off">
+                        <button class="btn btn-header" id="searchBtn" style="border: none;"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+                <ul id="suggestionsList" class="suggestions-list" style="border: none;"></ul>
+            </div>
+        </div>
+
+        <div id="poke-section" id="poke-section">
+
+            <div class="poke-list">
+                <ul class="nav-list" style="outline: none  !important;">
+                    <!-- Pokemon Type Buttons -->
+                    <div class="pokeMenuList"><p class="nav-item"><button class="btn btn-header"
+                                id="ver-todos">All</button></p></div>
+                    <div class="pokeMenuList"><p class="nav-item"><button class="btn btn-header bug"
+                                id="bug">Bug</button></p></div>
+                    <div class="pokeMenuList"><p class="nav-item"><button class="btn btn-header dark"
+                                id="dark">Dark</button></p></div>
+                    <div class="pokeMenuList"><p class="nav-item"><button class="btn btn-header dragon"
+                                id="dragon">Dragon</button></p></div>
+                    <div class="pokeMenuList"><p class="nav-item"><button class="btn btn-header electric"
+                                id="electric">Electric</button></p></div>
+                    <div class="pokeMenuList"><p class="nav-item"><button class="btn btn-header fairy"
+                                id="fairy">Fairy</button></p></div>
+                    <div class="pokeMenuList"><p class="nav-item"><button class="btn btn-header fighting"
+                                id="fighting">Fighting</button></p></div>
+                    <div class="pokeMenuList"><p class="nav-item"><button class="btn btn-header fire"
+                                id="fire">Fire</button></p></div>
+                    <div class="pokeMenuList"><p class="nav-item"><button class="btn btn-header flying"
+                                id="flying">Flying</button></p></div>
+                    <div class="pokeMenuList"><p class="nav-item"><button class="btn btn-header ghost"
+                                id="ghost">Ghost</button></p></div>
+                    <div class="pokeMenuList"><p class="nav-item"><button class="btn btn-header grass"
+                                id="grass">Grass</button></p></div>
+                    <div class="pokeMenuList"><p class="nav-item"><button class="btn btn-header ground"
+                                id="ground">Ground</button></p></div>
+                    <div class="pokeMenuList"><p class="nav-item"><button class="btn btn-header ice"
+                                id="ice">Ice</button></p></div>
+                    <div class="pokeMenuList"><p class="nav-item"><button class="btn btn-header normal"
+                                id="normal">Normal</button></p></div>
+                    <div class="pokeMenuList"><p class="nav-item"><button class="btn btn-header poison"
+                                id="poison">Poison</button></p></div>
+                    <div class="pokeMenuList"><p class="nav-item"><button class="btn btn-header psychic"
+                                id="psychic">Psychic</button></p></div>
+                    <div class="pokeMenuList"><p class="nav-item"><button class="btn btn-header rock"
+                                id="rock">Rock</button></p></div>
+                    <div class="pokeMenuList"><p class="nav-item"><button class="btn btn-header steel"
+                                id="steel">Steel</button></p></div>
+                    <div class="pokeMenuList"><p class="nav-item"><button class="btn btn-header water"
+                                id="water">Water</button></p></div>
+                </ul>
+            </div>
+            <div class="scroll-buttons-container">
+                <!-- Scroll Buttons -->
+                <button class="scrollBtnList left">&lt;</button>
+                <button class="scrollBtnList right">&gt;</button>
+            </div>
+        </div>
+
+        <!-- Back to Top Button -->
+        <button id="backToTopBtn">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+    </header>
+    <main>
+        <div id="todos">
+            <div class="pokemon-todos" id="listaPokemon">
+                <!-- Pokemon cards will be displayed here -->
+            </div>
+        </div>
+    </main>
+
+    <div class="footer"> </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
