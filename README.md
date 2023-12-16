@@ -2,7 +2,7 @@
 
 Bem-vindo à aplicação web da Pokédex! Este aplicativo permite aos usuários explorar e buscar Pokémon com base em seus tipos.
 
-Demo disponível no CodePen: [Demo](https://codepen.io/pen/?editors=1010)
+Demo disponível no CodePen: [Demo](https://codepen.io/La-s-Lara/pen/MWLNWma)
 
 ## Índice
 - [Introdução](#introdução)
